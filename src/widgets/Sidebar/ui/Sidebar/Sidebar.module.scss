@@ -1,0 +1,66 @@
+.Sidebar {
+    height: calc(100vh - var(--navbar-height));
+    width: var(--sidebar-width);
+    background: var(--inverted-bg-color);
+    position: relative;
+    transition: width 0.3s;
+}
+.switchers {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 50px;
+    .linksItem{
+
+        margin-left: 10px;
+        margin-bottom: 15px;
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        span{
+            opacity: 1;
+            transition: .1s ease-in;
+            margin-left: 15px;
+
+        }
+    }
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+    .switchers{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lang{
+        margin-left: 0;
+    }
+    .linksItem span{
+        opacity: 0;
+        width: 0;
+        transition: .1s ease-in;
+    }
+}
+
+.lang {
+    margin-left: 20px;
+}
+
+.collapseBtn{
+    position: absolute;
+    top: 80%;
+    left: 98%;
+}
+
+.svgStyles{
+   fill: var(--bg-color);
+}
