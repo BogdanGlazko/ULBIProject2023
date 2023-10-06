@@ -28,7 +28,7 @@
         }
         span{
             opacity: 1;
-            transition: .1s ease-in;
+            transition: width .2s ease-in;
             margin-left: 15px;
 
         }
@@ -47,7 +47,7 @@
     .linksItem span{
         opacity: 0;
         width: 0;
-        transition: .1s ease-in;
+        transition: width .2s ease-in;
     }
 }
 
